@@ -1,0 +1,23 @@
+Every AI:
+
+	- Recalculate Target prio after each attack
+
+	- Take target that is in LOS.
+	- If multiple targets in LOS: check distance and damage history
+	- Damage history constantly evaporates, but calculation works with the distance of the target
+		So a target that did no damage, but is close might still be prio'ed above a target that low damaged the AI, but is very far away. 
+
+	- if no target is in LOS: seek target with damage history
+	- if no target is in LOS & damage history list is empty: go back to idle position
+
+
+Bonus:
+	- ability to 'hear'. Sets a target when hearing enough (by distance and kind of sound, footsteps right behind or a big blast somewhat away)
+	- including other AI's in the target list when they damage eachother by accident
+
+
+
+Grunt:
+
+	- Target if out of sight: leak points
+	- 
